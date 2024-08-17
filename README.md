@@ -19,12 +19,12 @@ While YOLOv8 is excellent for detecting objects and providing bounding boxes, it
 ### Architecture Overview
 The architecture of this integration can be broken down into the following steps:
 
-**Object Detection with YOLOv8:**The YOLOv8 model processes the input image and detects objects, generating bounding box coordinates around them.
+**Object Detection with YOLOv8**:The YOLOv8 model processes the input image and detects objects, generating bounding box coordinates around them.
 
-**Segmentation with SAM2:**
+**Segmentation with SAM2**:
 The bounding box coordinates from YOLOv8 are fed into SAM2.
 SAM2 uses these coordinates as prompts to generate segmentation masks for the objects within the bounding boxes.
 
-**Post-Processing:**
+**Post-Processing**:
 The segmentation masks are refined and can be used for various downstream tasks like object classification, instance segmentation, or further image analysis.
 
